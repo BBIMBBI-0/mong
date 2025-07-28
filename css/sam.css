@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0; box-sizing: border-box;} 
+
+a {text-decoration: none; color: rgb(0, 0, 0);}
+
+img {max-width: 100%;}
+
+#layout {width: 1200px; margin: auto;}
+
+header {height: 150px; display: flex; justify-content: space-between;}
+
+/* 로고 이미지 */
+header> a { align-self: center;  padding: 25px;} 
+
+
+/* 로그인+메뉴 */
+header> div {display: flex; flex-direction: column; justify-content: space-between;}
+
+
+/* 로그인 
+#login {display: flex; justify-content: flex-end; padding: 20px 20px 0 0; }
+#login a {display:block; padding:3px 15px;}
+#login a:hover {text-decoration: underline; font-weight: bold;}*/
+
+
+/* 메뉴 */
+#mm ul {list-style: none; display: flex;}
+#mm a {display:block; padding:12px 30px; font-size: 1.2rem; font-weight: bold; letter-spacing: 1px;}
+#mm a:hover {background:rgb(0, 0, 0); color:white;}
+
+/*메인메뉴*/
+.mainMenu {
+    font-weight: bold; font-size: 1.3rem; color: black; 
+}
+
+/*서브메뉴*/
+nav.subMenu {
+    position: absolute; width:100%; padding:10px; top:50px; left: 0; 
+    z-index: 2; height: 170px; height: 0; overflow: hidden;
+    /* background: rgba(255,255,255,  0.9); */
+    transition: 0.5s;
+}
+nav.subMenu a {
+    padding:7px; display: block;
+}
+nav.subMenu a:hover {
+    background:#489ee0; color:white;
+}
+
+
+/* 배너사진 
+#mainPhoto {height: 300px;}
+#mainPhoto h1 {display: none;}*/
+
+
+
+/* 서비스창 */
+main>div {display: flex; background:skyblue; padding : 20px 0 0 20px;}
+main>div>h2 {font-size: 2.5rem; margin: 20px 0;}
+
+/* 메뉴창 */
+#service {/* height: 170px; */ border-bottom: 3px dashed #999; flex: 1; }
+#service h2 {padding-left: 30px; padding-top: 15px;}
+#service ul {display: flex; /*align-items: center;*/ justify-content: space-between; padding: 0 120px; list-style: none;/*  margin-top: 40px; height: 100px; */ transform: translateY(-20px);}
+#service li {font-size: 1.2rem; text-align: center; flex: 1; margin: 5px; margin-bottom:0; margin-top: 30px; align-items: center; justify-content: center; /* transition: 0.2s; */ position: relative; }
+#service li:hover {font-weight: bold; background: rgb(255, 128, 60); padding: 10px;}
+#service li:hover .subMenu {height: 130px; background: rgb(255, 172, 127);}
+#service li:hover a {color: rgb(255, 255, 255);}
+
+
+/* ? 
+#menuMenu {height: 250px; display: flex; padding: 20px;}
+#notice h3 a , #conduct h3 a {float: right; padding-right: 10px; font-size: 1.5rem;} 
+#notice li , #conduct li {list-style: none; }
+#notice span , #conduct span {float: right;}
+#notice ol , #conduct ol {line-height: 200%; margin-top: 30px;}
+#notice li:hover , #conduct li:hover {text-decoration: underline;}*/
+
+
+/* 공지사항 
+#notice {width: 110%; } 
+#notice h3 {margin: 10px 0;}*/
+
+/* 전시안내 
+#conduct {width: 110%; margin-left: 70px;}
+#conduct h3 {margin: 10px 0 10px 10px;}*/
+
+
+/*  EVENT */ 
+#EVENT {height: 300px; overflow: hidden; background: rgb(255, 212, 138); }
+#EVENT h2 { margin: 30px 0 25px 20px; color: white; font-size: 2.5rem; text-shadow: 2px 2px 7px rgb(243, 122, 56);}
+#EVENT div { display: flex; width:2000px; position: relative; left:-400px;}
+#EVENT a { padding: 3px; width: 400px;  display: block; transition: 0.5s;}
+.big {transform: scale(1.7); box-shadow: 0 0 10px rgb(255, 138, 54); z-index: 1; background: rgb(255, 112, 34);}
+#EVENT img { display: block; width: 100%; }
+
+#EVENT div:last-child {margin-top: 10px; width: 2100px; left: -280px; display: none;}
+
+
+/* iTEM */
+#iTEM h2 { margin: 30px 0 25px 20px; color: rgb(255, 138, 54); font-size: 2.5rem; /* text-shadow: 2px 2px 7px rgb(255, 163, 93); */ }
+#iTEM div { margin: auto; margin-bottom: 37px; width: fit-content;}
+#iTEM div a { margin: 17px; }
+
+/* BST */
+#BST {border: 7px solid rgb(255, 138, 54); padding-top: 50px;}
+#BST div {margin: auto; display: flex; flex-wrap: wrap; justify-content: center;}
+#BST a { margin: 37px; }
+#BST h4 { text-align: center; padding-bottom: 20px; }
+
+/* 베스트 브랜드 */
+#BR { background: #84caff; }
+#BR h2 { margin: 30px 0 25px 20px; color: white; font-size: 2.5rem; text-shadow: 2px 2px 7px rgb(243, 122, 56);}
+#BR> div {display: flex; justify-content: space-evenly; height: 220px; }
+#BR a {display: block; text-align: center; margin-top: 5px;}
+#BR a:hover {font-weight: bold;}
+#BR img {border-radius: 50%;}
+
+
+
+/*하단*/
+footer {
+    height:150px; background: #ddd;
+    padding: 30px;
+}
+footer ul {
+    display: flex; justify-content: space-between;
+    list-style: none;
+}

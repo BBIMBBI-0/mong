@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>멍냥밥상</title>
+    <link rel="stylesheet" href="css/sam.css">
+    <script src="js/jquery-1.12.3.js"></script>
+    <script src="js/sam.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(()=>{
+            const toRight = ()=> {
+                $("#EVENT div:first-of-type").stop().animate({
+                    left : 0
+                }, 1500 , ()=> {
+                    $("#EVENT div:first-of-type a").removeClass('big');
+                    $("#EVENT div:first-of-type").css('left' , '-400px' );
+                    $("#EVENT div:first-of-type").prepend( $("#EVENT div:first-of-type").children().last() );
+                    $("#EVENT div:first-of-type a").eq(2).addClass('big');
+                });
+            }
+            setInterval(toRight, 2500);
+            const toLeft = ()=> {
+                $("#portfolio div:last-child").stop().animate({
+                    left : '-630px'
+                }, 1500 , ()=> {
+                    $("#portfolio div:last-child").css('left' , '-280px' );
+                    $("#portfolio div:last-child").append( $("#portfolio div:last-child").children().first() );
+                  
+                });
+            }
+            //setInterval( toLeft , 2600 );
+        });
+    </script>
+    <link rel="stylesheet" href="css/seoul.css">
+</head>
+<body>
+    <div id="layout">
+        <main>
+            <div>
+                <a href="index.html"><img src="images/logo.png" alt="멍냥밥상 로고"></a>
+                <section id="service">
+                    <ul>    
+                        <li>
+                            <a href="#" class="mainMenu">멍멍 밥상</a>
+                            <nav class="subMenu">
+                                <a href="#">멍멍 사료</a>
+                                <a href="#">멍멍 간식</a>
+                                <a href="#">멍멍 영양제</a>
+                            </nav>
+                        </li>
+                        <li>
+                            <a href="#" class="mainMenu">냥냥 밥상</a>
+                            <nav class="subMenu">
+                                <a href="#">냥냥 사료</a>
+                                <a href="#">냥냥 간식</a>
+                                <a href="#">냥냥 영양제</a>
+                            </nav>
+                        </li>
+                        <li>
+                            <a href="#" class="mainMenu">MZ 멍냥</a>
+                            <nav class="subMenu">
+                                <a href="#">MZ 간식</a>
+                                <a href="#">생축파티</a>
+                            </nav>
+                        </li>
+                        <li>
+                            <a href="#" class="mainMenu">영양제</a>
+                            <nav class="subMenu">
+                                <a href="#">멍멍 영양제</a>
+                                <a href="#">냥냥 영양제</a>
+                            </nav>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+                <section id="EVENT">
+                    <h2>EVENT</h2>
+                    <div>
+                        <a href="#"><img src="images/img1.jpg" alt="인기브랜드 간식모음"></a>
+                        <a href="#"><img src="images/img2.jpg" alt="베스트 영양제 모음"></a>
+                        <a href="#" class="big"><img src="images/img3.jpg" alt="MZ간식 모음"></a>
+                        <a href="#"><img src="images/img4.jpg" alt="생일파티 간식 모음"></a>
+                        <a href="#"><img src="images/img2.jpg" alt="베스트 영양제 모음"></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="images/img2.jpg" alt="수강생 포트폴리오 2"></a>
+                        <a href="#"><img src="images/img3.jpg" alt="수강생 포트폴리오 3"></a>
+                        <a href="#"><img src="images/img4.jpg" alt="생일파티 간식 모음"></a>
+                        <a href="#"><img src="images/img1.jpg" alt="수강생 포트폴리오 4"></a>
+                    </div>
+                </section>
+                <section id="iTEM">
+                    <h2>BEST iTEM</h2>
+                    <div>
+                        <a href="#"><img src="images/MZ.png" alt="MZ간식"></a>
+                        <a href="#"><img src="images/dog.png" alt="강아지"></a>
+                        <a href="#"><img src="images/meow.png" alt="고양이"></a>
+                    </div>
+                </section>
+                <section id="BST">
+                    <div>
+                        <section>
+                            <a href="#"><img src="images/a.jpg" alt="먹태깡"></a>
+                            <h4>먹태깡<br>6900원</h4>
+                        </section>
+                        <section>
+                            <a href="#"><img src="images/j.JPG" alt="미니피자"></a>
+                            <h4>미니피자<br>8900원</h4>
+                        </section>
+                        <section>
+                            <a href="#"><img src="images/c.JPG" alt="바나나킥"></a>
+                            <h4>바나나킥<br>7000원</h4>
+                        </section>
+                        <section>
+                            <a href="#"><img src="images/i.JPG" alt="치맥"></a>
+                            <h4>치맥세트<br>10000원</h4>
+                        </section>
+                        <section>
+                            <a href="#"><img src="images/e.JPG" alt="버터댕"></a>
+                            <h4>버터댕<br>7300원</h4>
+                        </section>
+                        <section>
+                            <a href="#"><img src="images/f.JPG" alt="보쌈"></a>
+                            <h4>댕냥 김치 보쌈<br>10500원</h4>
+                        </section>
+                        <section>
+                            <a href="#"><img src="images/g.jpg" alt="씨리얼"></a>
+                            <h4>씨리멀<br>7100원</h4>
+                        </section>
+                        <section>
+                            <a href="#"><img src="images/h.jpg" alt="짜장"></a>
+                            <h4>짜짱<br>6900원</h4>
+                        </section>
+                        <section>
+                            <a href="#"><img src="images/k.JPG" alt="한가위 세트"></a>
+                            <h4>한가위 선물 세트<br>12900원</h4>
+                        </section>
+                         <section>
+                            <a href="#"><img src="images/b.JPG" alt="멕시칸"></a>
+                            <h4>댕시칸 치킨<br>7900원</h4>
+                        </section>
+                         <section>
+                            <a href="#"><img src="images/l.jpg" alt="메달"></a>
+                            <h4>댕 잘했어요<br>6900원</h4>
+                        </section>
+                         <section>
+                            <a href="#"><img src="images/m.JPG" alt="도넛"></a>
+                            <h4>댕킨도나쓰 세트<br>9900원</h4>
+                        </section>
+                    </div>
+                </section>
+                <section id="BR">
+                    <h2>BEST Brand</h2>
+                    <div>
+                        <div>
+                            <a href="#"><img src="images/teacher1.jpg" alt="BR1"><a href="#">힐링펫</a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/teacher2.jpg" alt="BR2"><a href="#">페스룸</a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/teacher3.jpg" alt="BR3"><a href="#">멍멍(수퍼)</a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/teacher4.jpg" alt="BR4"><a href="#">묘하개 끌리냥</a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/teacher5.jpg" alt="BR5"><a href="#">나가자</a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/teacher6.jpg" alt="BR6"><a href="#">놀로</a> 
+                        </div>
+                    </div>    
+                </section>
+            </main>
+        <footer>
+            <ul>
+                <li>
+                    <a href="#">법적고지</a>
+                    <a href="#">개인정보보호방침</a>
+                    <a href="#">개인정보처리방침</a>
+                </li>
+                <li>
+                    입금: 농협 302-1051-7449-71 김팡비<br>
+                    문의전화: 010-0377-1278<br>
+                    이메일: master@mpension.co.kr<br>
+                    주소: 애니멀 댕댕별 냥냥구 행복로 1004
+                </li>
+                <li>                    
+                    상호명: 주식회사 멍냥밥상<br>
+                    사업자등록번호: 030-00-30327<br>
+                    대표자: 김팡비<br>
+                    <a href="#">사이트제작: 멍냥밥상</a>
+                </li>
+            </ul>
+        </footer>
+    </div>    
+</body>
+</html>
